@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    networks:
+      - financas-network
+    volumes:
+      - type: volume
+        source: financas-vol
+        target: /vol
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - target: 3306
+        published: 3306
+
+networks:
+  financas-network:
+
+volumes:
+  financas-vol:
