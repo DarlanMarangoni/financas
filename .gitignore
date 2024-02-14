@@ -28,3 +28,5 @@ replay_pid*
 /infra/.terraform.tfstate.lock.info
 /infra/terraform.tfstate
 /infra/terraform.tfstate.backup
+/financas-api/financas-api.iml
+/financas-api/HELP.md
